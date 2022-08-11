@@ -1,0 +1,18 @@
+{% extends 'events/base.html' %}
+
+{% block content %}
+<center>
+<h1>{{venue}}</h1><br>
+    <div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{venue.address}}</li>
+    <li class="list-group-item">{{venue.zip_code}}</li>
+    <li class="list-group-item">{{venue.phone}}</li>
+      <li class="list-group-item">{{venue.email_address}}</li>
+      <li class="list-group-item">
+          <a href="{{venue.web}}">{{venue.web}}</a>
+      </li>
+  </ul>
+</div>
+</center>
+{% endblock %}
